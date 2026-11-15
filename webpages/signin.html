@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="../css/account.css">
+</head>
+
+<body>
+
+  <main class="auth-main">
+    <div class="auth-card">
+      <h2 class="auth-title">Đăng nhập</h2>
+
+      <form class="auth-form" id="signin-form">
+        <div class="form-group">
+          <label for="signin-email">Email</label>
+          <input type="email" id="signin-email" required>
+        </div>
+        <div class="form-group">
+          <label for="signin-password">Mật khẩu</label>
+          <input type="password" id="signin-password" required>
+        </div>
+        <button type="submit" class="btn-primary">Đăng nhập</button>
+      </form>
+
+      <div class="auth-footer">
+        Chưa có tài khoản? <a href="signup.html">Đăng ký</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/auth.js"></script>
+</body>
+
+</html>

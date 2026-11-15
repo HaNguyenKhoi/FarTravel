@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Căn giữa thẻ main trên màn hình */
+.auth-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+
+/* Khung Card màu trắng có hiệu ứng đổ bóng */
+.auth-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 440px;
+  padding: 48px 40px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+}
+
+/* Tiêu đề */
+.auth-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 32px;
+}
+
+/* Các ô nhập liệu */
+.auth-form .form-group {
+  margin-bottom: 20px;
+}
+
+.auth-form label {
+  display: block;
+  font-size: 14px;
+  color: #4a4a4a;
+  margin-bottom: 8px;
+}
+
+.auth-form input {
+  width: 100%;
+  height: 42px;
+  padding: 0 14px;
+  font-size: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  outline: none;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-form input:focus {
+  border-color: #1677ff;
+  box-shadow: 0 0 0 2px rgba(22, 119, 255, 0.1);
+}
+
+/* Nút bấm Đăng nhập / Đăng ký màu xanh */
+.btn-primary {
+  width: 100%;
+  height: 44px;
+  background-color: #1677ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0958d9;
+}
+
+/* Đường dẫn chuyển đổi Đăng ký/Đăng nhập ở chân form */
+.auth-footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.auth-footer a {
+  color: #1677ff;
+  text-decoration: underline;
+  margin-left: 4px;
+}
+
+.auth-footer a:hover {
+  color: #0958d9;
+}

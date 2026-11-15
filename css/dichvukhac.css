@@ -1,0 +1,317 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+
+/*phần header*/
+.header {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20cm;
+}
+
+.hero-title {
+    transform: translateY(100px);
+}
+
+.navbarmain {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: aliceblue;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    left: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+}
+
+.fs-6xl {
+    color: #fcd34d;
+}
+
+.col-6 {
+    font-size: 1.3rem;
+}
+
+/*phần footer*/
+
+.backgroundfooter {
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.footer-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+
+
+/*tạo phần phụ*/
+/* Khung chứa các nút nổi cố định ở góc dưới bên phải */
+.floating-contact {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
+}
+
+/* Kiểu dáng chung cho các nút */
+.float-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hiệu ứng phóng to nhẹ khi di chuột vào nút */
+.float-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Nút Đăng nhập (Vì chữ "Đăng nhập" dài nên thiết kế dạng hình viên thuốc/bo góc dài hoặc giữ hình tròn tùy chỉnh) */
+.login-btn {
+    width: auto;
+    padding: 0 16px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: #d84315;
+    font-size: 0.85rem;
+    font-family: 'Google Sans', sans-serif, Arial, sans-serif;
+    white-space: nowrap;
+}
+
+/* Nút Lên đầu trang */
+.top-btn {
+    margin-left: 30%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333333;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+/*card 1*/
+.card {
+    padding: 2%;
+}
+
+/* Khung thẻ nằm ngang chuẩn */
+.service-card-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fcf9f5;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 30px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0eae1;
+    font-family: 'Google Sans', sans-serif, Arial, sans-serif;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hiệu ứng nổi lên nhẹ khi rê chuột */
+.service-card-horizontal:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* Ảnh bên trái bo góc tròn độc lập */
+.service-img-box {
+    flex: 1;
+    min-width: 320px;
+    height: 280px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.service-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.service-card-horizontal:hover .service-img-box img {
+    transform: scale(1.04);
+}
+
+/* Nội dung bên phải */
+.service-info-box {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Icon hình ô tô */
+.service-icon {
+    width: 38px;
+    height: 38px;
+    background-color: #f3e6d8;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.service-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: #c25b1a;
+}
+
+.service-subtitle {
+    font-size: 12px;
+    font-weight: 700;
+    color: #c25b1a;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 4px;
+}
+
+.service-title-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.service-description {
+    font-size: 13.5px;
+    color: #555555;
+    line-height: 1.55;
+    margin-bottom: 16px;
+}
+
+.service-bullet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.service-bullet-list li {
+    font-size: 13.5px;
+    color: #444444;
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 16px;
+    font-weight: 500;
+}
+
+.service-bullet-list li::before {
+    content: "•";
+    color: #c25b1a;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Nút bấm Liên hệ đặt xe */
+.service-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #c25b1a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    width: fit-content;
+    transition: background-color 0.2s ease;
+}
+
+.service-action-btn:hover {
+    background-color: #a34810;
+}
+
+
+
+
+/*card 2*/
+.card-2 {
+    padding: 2%;
+    margin-left: 50%;
+}
+
+/* Khung thẻ nằm ngang */
+.service-card-horizontal-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fcf9f5;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 30px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0eae1;
+    font-family: 'Google Sans', sans-serif, Arial, sans-serif;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hiệu ứng nổi lên nhẹ khi rê chuột */
+.service-card-horizontal-2:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+
+.service-card-horizontal-2:hover .service-img-box img {
+    transform: scale(1.04);
+}
+
+
+
+
+
+
+

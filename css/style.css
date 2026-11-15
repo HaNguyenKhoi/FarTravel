@@ -1,0 +1,188 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden
+}
+
+/*phần header*/
+.header {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15.5cm;
+}
+
+.hero-title {
+    transform: translateY(100px);
+}
+
+.navbarmain {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: aliceblue;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    left: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+}
+
+.fs-6xl {
+    color: #fcd34d;
+}
+
+.fs-4xl {
+    color: aliceblue;
+}
+
+.col-6 {
+    font-size: 1.3rem;
+}
+
+
+/*phần main*/
+.mauchu {
+    color: #0284C7;
+}
+
+
+/* Giới hạn kích thước khung của Carousel */
+#carouselExampleInterval {
+    max-width: 700px;  
+    margin: 0 auto;    
+}
+
+/* Ép ảnh bên trong Carousel nằm gọn trong khung, không bị phóng to quá khổ */
+#carouselExampleInterval .carousel-item img {
+    height: 400px;       
+    object-fit: cover;       
+    object-position: center; 
+    border-radius: 12px;
+}
+
+.container1 {
+    background-image: url(../img/bg-vangnau.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container2 {
+    background-image: url(../img/bg-vangnau.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.video {
+    height: 500px;
+}
+
+.card-subtitle {
+    color: rgb(5, 146, 99);
+}
+
+.container-danhgia {
+    background-image: url(../img/bg-vangnau.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/*phần footer*/
+.backgroundfooter {
+    position: relative;
+    overflow: hidden;  
+}
+
+.footer-video {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 0;      
+}
+
+
+
+
+
+
+/*tạo phần phụ*/
+/* Khung chứa các nút nổi cố định ở góc dưới bên phải */
+.floating-contact {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
+}
+
+/* Kiểu dáng chung cho các nút */
+.float-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hiệu ứng phóng to nhẹ khi di chuột vào nút */
+.float-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Nút Đăng nhập (Vì chữ "Đăng nhập" dài nên thiết kế dạng hình viên thuốc/bo góc dài hoặc giữ hình tròn tùy chỉnh) */
+.login-btn {
+    width: auto;
+    padding: 0 16px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: #d84315;
+    font-size: 0.85rem;
+    font-family: 'Google Sans', sans-serif, Arial, sans-serif;
+    white-space: nowrap;
+}
+
+/* Nút Lên đầu trang */
+.top-btn {
+    margin-left: 30%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333333;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
