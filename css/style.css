@@ -181,6 +181,27 @@
 
 
 
+main {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    width: auto;
+    min-height: 44px;
+    border: none;
+    border-radius: 22px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
 
 
 
