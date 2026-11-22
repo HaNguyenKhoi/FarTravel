@@ -1,15 +1,9 @@
-.body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
     height: 100vh;
     width: 100%;
     padding: 0;
     margin: 0;
     border: 0;
-    overflow: hidden;
-    width: 100%;
-    max-width: 100%;
     overflow-x: hidden
 }
 
@@ -19,7 +13,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 15.5cm;
+    height: 16cm;
 }
 
 .hero-title {
@@ -175,29 +169,48 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #333333;
-    font-size: 1.4rem;
+    background-color: #8f0ea3;
+    font-size: 1.7rem;
 }
 
 
-
+/*thiết lập chức năng chế độ sáng tối*/
 main {
     background-color: white;
     color: black;
 }
 
-.dark-mode {
+main.dark-mode {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+
+/*style nút sáng-tối*/
+.dark-mode-btn {
     width: auto;
     min-height: 44px;
+    margin-left: 30%;
+    width: 50px;
+    height: 50px;
     border: none;
-    border-radius: 22px;
-    background-color: #333333;
+    border-radius: 50%;
+    background-color: #03762d;
     color: #ffffff;
-    font-size: 0.85rem;
-    font-weight: bold;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+.dark-mode-btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+
 
 
 
